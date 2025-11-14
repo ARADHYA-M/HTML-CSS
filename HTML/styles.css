@@ -1,0 +1,12 @@
+td{
+  text-align: center;
+}
+.checkmark{
+  color:green;
+}
+.crossmark{
+  color:red;
+}
+th,td{
+  padding:3px;
+}
