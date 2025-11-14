@@ -1,0 +1,89 @@
+body{
+  margin:0;
+  padding:0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  letter-spacing: 1px;
+}
+.container{
+  width:50%;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  padding:20px;
+  box-sizing: border-box;
+  display: grid;
+  /* grid-template-columns: 1fr 1fr; */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  row-gap:10px;
+  column-gap: 10px;
+  border-radius:5px;
+}
+p{
+  margin:0;
+  padding:0;
+  margin-bottom:8px;
+}
+.one,
+.two{
+  width:100%;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  padding:5px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border-radius:5px;
+}
+.logo{
+  width:20px;
+}
+.image{
+  width:100%;
+  border-radius:5px;
+  margin-bottom: 10px;
+}
+.links{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 10px;
+}
+/*@media (max-width: 700px) {
+  .container {
+    width: 80%;                  
+    grid-template-columns: 1fr;  
+  }
+}*/
+
+
+/* When you don't need a media query?
+You can skip the media query if you use auto-fit / auto-fill with minmax():
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+This tells the browser - Make as many columns as possible that are at least 250px wide and if there's not enough space, automatically reduce to fewer columns.So the grid adapts automatically, without a media query.
+It's like a smart grid. */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
