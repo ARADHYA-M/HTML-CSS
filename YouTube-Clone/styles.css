@@ -1,0 +1,200 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  margin:0;
+  padding-top: 90px;
+  padding-left: 100px;
+  padding-right: 20px;
+}
+.timeSet{
+  position:relative;
+}
+.timing{
+  background-color: black;
+  position:absolute;
+  bottom:20px;
+  padding:3px;
+  font-size:14px;
+  right:10px;
+  color:white;
+}
+.thumbnail{
+  width:100%;
+  margin-bottom: 10px;
+}
+.grid-box{
+  display: grid;
+  grid-template-columns: 50px 1fr;
+}
+.profile-pic{
+  height:50px;
+  border-radius: 50px;
+}
+.content p{
+  margin:0;
+  margin-left:10px;
+}
+.content .caption{
+  font-weight: bold;
+  font-size:18px;
+  margin-bottom:10px;
+  line-height:25px;
+}
+.content .channel-name,
+.content .views{
+  color:gray;
+  font-size:15px;
+  margin-bottom:5px;
+}
+.layout{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 20px;
+  column-gap: 20px;
+}
+.header{
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  height:80px;
+  display:flex;
+  align-items:center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(239, 239, 239);
+  z-index:10;
+  background-color: white;
+  padding: 0 26px;
+}
+.left{
+  display:flex;
+  gap:46px;
+  flex-shrink: 0;
+}
+.middle{
+  display:flex;
+  flex:1;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 40px;
+}
+.right{
+  display:flex;
+  gap:36px;
+  flex-shrink: 0;
+}
+.sidebar{
+  display: flex;
+  flex-direction: column;
+  position:fixed;
+  top:80px;
+  left:0;
+  bottom:0;
+  width:90px;
+  height:600px;
+}
+.sidebar > div {
+  width: 100%;                /* ✅ make each item full width */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+  cursor: pointer;
+}
+
+.sidebar > div:hover {
+  background-color: #e5e5e5;   /* ✅ now the whole row turns gray */
+}
+.sidebar p{
+  font-size:14px;
+  margin:0;
+  text-align: center;               /* ✅ centers text */
+  max-width: 80px;                  /* ✅ prevents text overflow */
+  word-wrap: break-word; 
+}
+.hamburger,
+.logo,
+.upload-icon,
+.apps-icon,
+.notification-icon,
+.channel-pic,
+.home-icon,
+.explore-icon,
+.subscription-icon,
+.originals-icon,
+.music-icon,
+.library-icon{
+  height:30px;
+  cursor:pointer;
+}
+.search-icon,
+.voice-icon{
+  height:30px;
+}
+.input-box{
+  flex:1;
+  height: 26px;
+  min-width: 200px;   /* ✅ won’t shrink too much */
+  max-width: 600px; 
+  border:1px solid rgb(233, 221, 221);
+  outline:none;
+  padding:10px 15px;
+  border-radius:3px;
+}
+.input-box::placeholder{
+  font-size:20px;
+  color:rgb(184, 181, 181);
+}
+.search-button button{
+  height:48px;
+  border: 1px solid rgb(233, 221, 221);
+  border-left: none;
+  background-color: rgb(244, 242, 242);
+  padding: 0px 16px;
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;
+}
+.voice-search-button button {
+  margin-left: 10px;
+  background-color: rgb(244, 242, 242);
+  border: none;
+  border-radius: 50%;
+  padding: 6px;
+  cursor: pointer;
+}
+.count{
+  position:relative;
+}
+.number{
+  position: absolute;
+  background-color: red;
+  padding:4px 6px;
+  border-radius:50%;
+  font-size:12px;
+  color:white;
+  right:-1px;
+  bottom:15px;
+}
+@media (max-width:750px){
+  .layout{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width:1000px){
+  .layout{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+@media (min-width:751px) and (max-width:999px){
+  .layout{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+.home-icon-div:hover,
+.explore-icon-div:hover,
+.subscription-icon-div:hover,
+.originals-icon-div:hover,
+.music-icon-div:hover,
+.library-icon-div:hover{
+  background-color: gray;
+}
