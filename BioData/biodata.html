@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BioData</title>
+    <link rel="stylesheet" href="biodata.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Welcome</h1>
+      <pre><i>
+  &quot;You are not your 
+    resume,
+  You are your work&quot;
+    </i></pre>
+      <div class="form">
+        <!-- <div class="details"> -->
+        <label>Name</label>
+        <input type="text" />
+        <!-- </div> -->
+        <!-- <div class="details"> -->
+        <label>Age</label>
+        <input type="number" />
+        <!-- </div> -->
+        <!-- <div class="details"> -->
+        <label>Mobile Number</label>
+        <input
+          type="tel"
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+          placeholder="999-999-9999"
+        />
+        <!-- </div> -->
+        <!-- <div class="details"> -->
+        <label>Address</label>
+        <textarea row="10" col="15" placeholder="Enter your Address"></textarea>
+        <!-- </div> -->
+        <!-- <div class="details"> -->
+        <label>Gender</label>
+        <div class="radios">
+          <div>
+            <input type="radio" />
+            <label>Male</label>
+          </div>
+          <div>
+            <input type="radio" />
+            <label>Female</label>
+          </div>
+          <div>
+            <input type="radio" />
+            <label>Others</label>
+          </div>
+        </div>
+        <!-- </div> -->
+        <!-- <div class="details"> -->
+        <label>Qualification</label>
+        <select>
+          <option value="bca">BCA</option>
+          <option value="cs">BSc-CS</option>
+          <option value="it">BSc-IT</option>
+          <option value="btech">BTech</option>
+          <option value="mca">MCA</option>
+        </select>
+        <!-- </div> -->
+        <!-- <div class="details"> -->
+        <label>Skills</label>
+        <div class="checks">
+          <div>
+            <input type="checkbox" />
+            <label>C</label>
+          </div>
+          <div>
+            <input type="checkbox" />
+            <label>C++</label>
+          </div>
+          <div>
+            <input type="checkbox" />
+            <label>Python</label>
+          </div>
+          <div>
+            <input type="checkbox" />
+            <label>Java</label>
+          </div>
+          <div>
+            <input type="checkbox" />
+            <label>JavaScript</label>
+          </div>
+        </div>
+        <!-- </div> -->
+      </div>
+      <div class="buttons">
+        <button>Submit</button>
+        <button>Reset</button>
+      </div>
+    </div>
+  </body>
+</html>
