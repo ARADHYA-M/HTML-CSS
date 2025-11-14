@@ -1,0 +1,34 @@
+button{
+  border:none;
+  padding:10px 22px;
+  border-radius: 5px;
+  font-size:18px;
+  background-color:black;
+  color:white;
+  cursor:pointer;
+}
+.danger,
+.success,
+.primary{
+  transition: box-shadow 0.1s,background-color 0.1s,color 0.1s;
+}
+.danger:hover{
+  background-color: red;
+  color:black;
+  box-shadow: 0 0 10px rgba(255,0,0,0.5);
+}
+.success:hover{
+  background-color:rgb(23, 217, 23);
+  color:black;
+  box-shadow: 0 0 10px rgba(0,255,0,0.5);
+}
+.secondary:hover{
+  background-color:gray;
+  color:black;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.primary:hover{
+  background-color:rgb(63, 233, 236);
+  color:black;
+  box-shadow: 0 0 10px rgba(0,0,255,0.5);
+}
